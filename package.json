@@ -4,13 +4,19 @@
   "description": "Frontend mentor challange",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --watch styles/sass/style.scss styles/style.css",
-    "dev": "npm run build-css && npm run live-server"
+    "build-css": "npm run node-sass --watch styles/sass/style.scss styles/style.css",
+    "live-server": "npm run live-server",
+    "dev": "concurrently \"live-server\" \"build-css\""
   },
   "author": "Homoki Denis",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^8.2.1",
+    "live-server": "^1.2.2",
     "node-sass": "^9.0.0",
     "sass": "^1.66.1"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.8.1"
   }
 }
