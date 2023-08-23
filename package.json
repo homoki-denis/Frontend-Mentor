@@ -1,0 +1,16 @@
+{
+  "name": "results-summary-component",
+  "version": "1.0.0",
+  "description": "Frontend mentor challange",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --watch styles/sass/style.scss styles/style.css",
+    "dev": "npm run build-css && npm run live-server"
+  },
+  "author": "Homoki Denis",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.66.1"
+  }
+}
